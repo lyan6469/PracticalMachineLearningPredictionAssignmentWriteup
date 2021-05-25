@@ -64,11 +64,13 @@ testing <- train[-inTrain, ]
 ```
 #### Modelling
 Start with three classic classification models:
+
  1. random forests (rf)
  1. generalized boosted regression (gbm)
  1. k-nearest neighbor (knn)
  
 Perform following steps for each model
+
  1. Train model with training set
  1. Test model with testing set
  1. Generate confusion matrix of the model

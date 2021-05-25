@@ -222,8 +222,19 @@ testing &lt;- train[-inTrain, ]</code></pre>
 </div>
 <div id="modelling" class="section level4">
 <h4>Modelling</h4>
-<p>Start with three classic classification models: 1. random forests (rf) 1. generalized boosted regression (gbm) 1. k-nearest neighbor (knn)</p>
-<p>Perform following steps for each model 1. Train model with training set 1. Test model with testing set 1. Generate confusion matrix of the model 1. Get model accuracy</p>
+<p>Start with three classic classification models:</p>
+<ol style="list-style-type: decimal">
+<li>random forests (rf)</li>
+<li>generalized boosted regression (gbm)</li>
+<li>k-nearest neighbor (knn)</li>
+</ol>
+<p>Perform following steps for each model</p>
+<ol style="list-style-type: decimal">
+<li>Train model with training set</li>
+<li>Test model with testing set</li>
+<li>Generate confusion matrix of the model</li>
+<li>Get model accuracy</li>
+</ol>
 <p>Stack the predictions together using random forests and get prediction accuracy of the combo model</p>
 <p>Set cross-validation to 5-fold</p>
 <pre class="r"><code>cv &lt;- trainControl(method=&quot;cv&quot;, 5)</code></pre>
